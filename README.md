@@ -1,5 +1,7 @@
 # Demo app for the "How to store a request body in Redis" post
 
+[![Build Status](https://travis-ci.com/xsolve-pl/redis-with-spring-mvc.svg?token=dd2vNedz3QZLxhqGs12s&branch=master)](https://travis-ci.com/xsolve-pl/redis-with-spring-mvc)
+
 ## Blog post
 
 The relevant blog post can be found [on our XSolve blog](https://xsolve.software/blog/redis-with-spring-mvc/)

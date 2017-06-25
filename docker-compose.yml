@@ -5,15 +5,13 @@ services:
     image: openjdk:8-jdk
     volumes:
       - .:/app
-#      - "~/.gradle/caches:/root/.gradle/caches"
-#      - "~/.gradle/wrapper:/root/.gradle/wrapper"
+      - .gradle/:/root/.gradle/
     working_dir: /app
     command: ./gradlew clean bootRun
     ports:
       - "8080:8080"
     environment:
       - SPRING_REDIS_HOST=redis
-#      - JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
   redis:
     image: redis

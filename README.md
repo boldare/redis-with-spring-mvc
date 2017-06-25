@@ -25,6 +25,13 @@ curl -H "Content-Type: application/json" \\
 Next, verify that the request payload has been saved in your redis instance, available under `localhost:6379`, under the key `123-456`. For this purpose,
 we recommend using the [Redis Desktop Manager](https://github.com/uglide/RedisDesktopManager/releases/tag/0.8.3).
 
+### Cleanup
+
+Execute
+```bash
+docker-compose down
+```
+
 ## Tests
 
 Don't forget to check out the `StoreRequestInRedisTest`, which can be run with `./gradlew test`.
